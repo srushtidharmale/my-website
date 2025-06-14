@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Participate! - NUS Infant and Child Language Centre</title>
+    <link rel="Stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+          <div class="title">NUS Infant and Child Language Centre</div>
+          <div class="nav-row">
+            <ul class="nav-links">
+              <li class="nav-item dropdown-parent">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li><a href="news.html" class="nav-link">In the News</a></li>
+              <li><a href="publications.html" class="nav-link">Publications</a></li>
+              <li><a href="#" class="nav-link">Our Team</a></li>
+              <li><a href="parent-information.html" class="nav-link">Parent Information</a></li>
+              <li><a href="frequently-asked-questions.html" class="nav-link">Frequently Asked Questions</a></li>
+              <li class="nav-item dropdown-parent">
+                <a href="to-participate.html" class="nav-link">To participate!</a>
+                <div class="dropdown-slider">
+                  <a href="directions-contact-us.html" class="dropdown-link">Directions/Contact Us</a>
+                </div>
+              </li>
+            </ul>
+            <form class="search-bar" onsubmit="return false;">
+              <input type="text" class="search-input" placeholder="Search...">
+              <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const searchInput = document.querySelector('.search-input');
+          const searchBtn = document.querySelector('.search-btn');
+          const searchBar = document.querySelector('.search-bar');
+
+          searchBar.addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add your search logic here
+            console.log('Searching for:', searchInput.value);
+          });
+        });
+      </script>
+      <p class="News">
+        To participate!
+      </p>
+      <div class="img">
+        <div class="about-text">
+          <p>We invite you and your child to participate in our research. If you sign up (instructions below), we'll be in touch with you about studies suitable for your child!</p>
+          <p>There are two ways to get in touch. You can send us an email or fill out our interest form.</p>
+          <h2>To fill out our interest form</h2>
+          <p>To participate in our studies, please fill out our interest form <a href="#" class="about-link">here</a>. We will be in touch with you about possible studies.</p>
+          <h2>To send us an email</h2>
+          <p>Alternatively, please send us an email at <a href="mailto:infantlanguagecentre@nus.edu.sg" class="about-link">infantlanguagecentre@nus.edu.sg</a>. We ask for the following information:</p>
+          <ul>
+            <li>Your child's full name and the full name of a parent or guardian whom we can contact.</li>
+            <li>Your child's date of birth.</li>
+            <li>The language(s) and dialect(s) your child is exposed to, and the proportion of time that your child hear each of these language(s). (e.g. English- 60%, Mandarin – 30%, Cantonese – 10%).</li>
+            <li>Your name</li>
+            <li>Your contact information.</li>
+          </ul>
+          <p>We look forward to having you in our centre!</p>
+        </div>
+      </div>
+      <footer class="site-footer">
+        <div class="footer-content">
+          <p>
+            Copyright © 2025 
+            <a href="#" class="footer-link">NUS Infant and Child Language Centre</a>. All rights reserved.<br>
+            Theme: <a href="#" class="footer-link">Ample</a> by ThemeGrill. Powered by <a href="#" class="footer-link">WordPress</a>.<br>
+            Blog.nus is brought to you by the 
+            <a href="https://ctlt.nus.edu.sg/" class="footer-link">Centre for Teaching, Learning and Technology</a> | 
+            <a href="#" class="footer-link">Terms of Use</a> | 
+            <a href="#" class="footer-link">Disclaimers</a>
+          </p>
+        </div>
+      </footer>
+</body>
+</html> 

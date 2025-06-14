@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Information - NUS Infant and Child Language Centre</title>
+    <link rel="Stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+          <div class="title">NUS Infant and Child Language Centre</div>
+          <div class="nav-row">
+            <ul class="nav-links">
+              <li class="nav-item dropdown-parent">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li><a href="news.html" class="nav-link">In the News</a></li>
+              <li><a href="publications.html" class="nav-link">Publications</a></li>
+              <li><a href="#" class="nav-link">Our Team</a></li>
+              <li><a href="parent-information.html" class="nav-link">Parent Information</a></li>
+              <li><a href="frequently-asked-questions.html" class="nav-link">Frequently Asked Questions</a></li>
+              <li class="nav-item dropdown-parent">
+                <a href="to-participate.html" class="nav-link">To participate!</a>
+                <div class="dropdown-slider">
+                  <a href="directions-contact-us.html" class="dropdown-link">Directions/Contact Us</a>
+                </div>
+              </li>
+            </ul>
+            <form class="search-bar" onsubmit="return false;">
+              <input type="text" class="search-input" placeholder="Search...">
+              <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const searchInput = document.querySelector('.search-input');
+          const searchBtn = document.querySelector('.search-btn');
+          const searchBar = document.querySelector('.search-bar');
+
+          searchBar.addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add your search logic here
+            console.log('Searching for:', searchInput.value);
+          });
+        });
+      </script>
+      <p class="News">
+        Parent Information
+      </p>
+    
+    
+        <div class="about-text">
+          <h2>What should I expect?</h2>
+          <p>You will be invited to come for a brief one-time visit to the Infant and Child Language Centre at NUS with your baby, which will last for about half an hour.<br>
+          Your baby will sit on your lap and listen to a set of words accompanied by pictures. We will be interested in the pictures that your child looks at in response to the words.<br>
+          Your child will be videotaped during the session, but all videotapes will be coded anonymously and discarded once coded. You may request a copy of your child's video record prior to coming for your appointment.<br>
+          You will also be asked to fill out a questionnaire on your child's language history.</p>
+          <h2>What are the risks?</h2>
+          <p>The procedure adopted in our studies do not pose any known risks to you or your baby. Our studies are non-invasive and we simply track children's eye movements as they look at objects on a screen. However, if at any point, you feel uncomfortable in participating in our study at any point, you may choose to withdraw immediately.</p>
+          <h2>What are the benefits?</h2>
+          <p>You will receive a small gift and a certificate for your child after participating in one of our studies. More broadly, the knowledge gained from our research contributes to our understanding of how children language. It is hoped that this knowledge will directly benefit families in advancing our understanding of how we can maximise our children's potential for success at language learning.</p>
+          <h2>How can I indicate my interest?</h2>
+          <p>You may contact us by email at <a href="mailto:infantlanguagecentre@nus.edu.sg" class="about-link">infantlanguagecentre@nus.edu.sg</a> or by phone at 6516 7751. If you'd like to find out more, please don't hesitate to contact us for more information, we will be happy to assist you. Alternatively, you may fill out our Interest Form and we will contact you if there is a suitable study for your child. All information you provide will be kept strictly confidential.</p>
+        
+      </div>
+      <footer class="site-footer">
+        <div class="footer-content">
+          <p>
+            Copyright © 2025 
+            <a href="#" class="footer-link">NUS Infant and Child Language Centre</a>. All rights reserved.<br>
+            Theme: <a href="#" class="footer-link">Ample</a> by ThemeGrill. Powered by <a href="#" class="footer-link">WordPress</a>.<br>
+            Blog.nus is brought to you by the 
+            <a href="https://ctlt.nus.edu.sg/" class="footer-link">Centre for Teaching, Learning and Technology</a> | 
+            <a href="#" class="footer-link">Terms of Use</a> | 
+            <a href="#" class="footer-link">Disclaimers</a>
+          </p>
+        </div>
+      </footer>
+</body>
+</html> 

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="Stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+          <img src="logo.jpeg" alt="NUS Logo" class="site-logo">
+          <div class="title">NUS Infant and Child Language Centre</div>
+          <div class="nav-row">
+            <ul class="nav-links">
+              <li class="nav-item dropdown-parent">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li><a href="news.html" class="nav-link">In the News</a></li>
+              <li><a href="publications.html" class="nav-link">Publications</a></li>
+              <li><a href="#" class="nav-link">Our Team</a></li>
+              <li><a href="parent-information.html" class="nav-link">Parent Information</a></li>
+              <li><a href="frequently-asked-questions.html" class="nav-link">Frequently Asked Questions</a></li>
+              <li class="nav-item dropdown-parent">
+                <a href="to-participate.html" class="nav-link">To participate!</a>
+                <div class="dropdown-slider">
+                  <a href="directions-contact-us.html" class="dropdown-link">Directions/Contact Us</a>
+                </div>
+              </li>
+            </ul>
+            <form class="search-bar" onsubmit="return false;">
+              <input type="text" class="search-input" placeholder="Search...">
+              <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const searchInput = document.querySelector('.search-input');
+          const searchBtn = document.querySelector('.search-btn');
+          const searchBar = document.querySelector('.search-bar');
+
+          searchBar.addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add your search logic here
+            console.log('Searching for:', searchInput.value);
+          });
+        });
+      </script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const currentPath = window.location.pathname.split('/').pop();
+          const allLinks = document.querySelectorAll('.nav-link, .dropdown-link'); // Select both main and dropdown links
+
+          allLinks.forEach(link => {
+            const linkPath = link.getAttribute('href');
+            if (linkPath === currentPath || (currentPath === '' && linkPath === 'index.html')) {
+              link.classList.add('active');
+            }
+          });
+        });
+      </script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const dropdownToggles = document.querySelectorAll('.nav-item.dropdown');
+
+          dropdownToggles.forEach(dropdown => {
+            const bsDropdown = new bootstrap.Dropdown(dropdown.querySelector('.dropdown-toggle'));
+            const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+
+            dropdown.addEventListener('mouseenter', function () {
+              bsDropdown.show();
+            });
+
+            // Hide dropdown when mouse leaves the entire dropdown area (nav-item + dropdown-menu)
+            dropdown.addEventListener('mouseleave', function () {
+              bsDropdown.hide();
+            });
+          });
+        });
+      </script>
+      <p class="News">
+        Home
+      </p>
+      <div class="img">
+        <img class="index_img" src="index_img2.jpeg">
+        <a href="signup.html"><img src="img1.jpg"></a>
+        <div class="about-text">
+          <p>
+            At the Infant and Child Language Centre, located in the Department of Psychology at the
+            University of Maryland, Baltimore County (UMBC), we investigate the extraordinary process by
+            which infants begin to understand and use language. Our mission is to uncover how early
+            cognitive and linguistic abilities emerge and interact during the first years of life, shaping each
+            child's foundation for communication and learning.
+          </p>
+          <p>
+            Early Word Production We explore how infants learn to connect sounds with meaning,laying the critical groundwork for expressive language development.
+          </p>
+          <p>
+            Cognitive Milestones Our research examines how essential cognitive processes like memory, attention, and pattern recognition evolve even before a child can speak or walk.
+          </p>
+          <p>
+            Bilingual Brain Development We study how growing up in a multilingual environment influences early brain development, including executive function and attention control.
+          </p>
+          <p>
+            Multimodal Learning This line of research delves into how babies process and integrate multiple communication cues such as facial expressions, gestures, and tone of voice to make sense of the world around them.
+          </p>
+          <p>
+            Emotion Language Link We investigate how emotional tone, caregiver interaction, and social context contribute to language acquisition and socio-emotional growth.
+          </p>
+          <p>
+            If you and your child would like to <a href="#" class="about-link">join us to find out more about how language develops</a>, please register your interest by clicking <a href="#" class="about-link">here</a>.
+          </p>
+        </div>
+      </div>
+      <footer class="site-footer">
+        <div class="footer-content">
+          <p>
+            Copyright © 2025 
+            <a href="#" class="footer-link">NUS Infant and Child Language Centre</a>. All rights reserved.<br>
+            Theme: <a href="#" class="footer-link">Ample</a> by ThemeGrill. Powered by <a href="#" class="footer-link">WordPress</a>.<br>
+            Blog.nus is brought to you by the 
+            <a href="https://ctlt.nus.edu.sg/" class="footer-link">Centre for Teaching, Learning and Technology</a> | 
+            <a href="#" class="footer-link">Terms of Use</a> | 
+            <a href="#" class="footer-link">Disclaimers</a>
+          </p>
+        </div>
+      </footer>
+</body>
+</html>
